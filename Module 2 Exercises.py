@@ -43,20 +43,20 @@ print("Your weight in grams is ", {grams:10.2})
 
 #6 used (GeeksforGeeks, S. E. P. L., 2025) for this problem because import random did not work
 import random
-num1= random.randint(0,9)
-num2= random.randint(0,9)
-num3= random.randint(0,9)
+number1= random.randint(0,9)
+number2= random.randint(0,9)
+number3= random.randint(0,9)
 
-print("Your random three-number combination is ", (num1),(num2),(num3))
+print("Your random three-number combination is ", (number1),(number2),(number3))
 
-#6 part two
+#6 Part Two
 import random
-num1= random.randint(1,6)
-num2= random.randint(1,6)
-num3= random.randint(1,6)
-num4= random.randint(1,6)
+number1= random.randint(1,6)
+number2= random.randint(1,6)
+number3= random.randint(1,6)
+number4= random.randint(1,6)
 
-print("Your random four-number combination is ", (num1),(num2),(num3), (num4))
+print("Your random four-number combination is ", (number1),(number2),(number3), (number4))
 
 #Sources
 ## Chegg. (2025). Citation Machine. Citation Machine, a Chegg service. https://www.citationmachine.net/
