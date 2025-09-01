@@ -26,3 +26,34 @@ else:
 
 
 #3
+gen_a = 'Female'
+gen_b = 'Male'
+gender= input("What is your biological gender?: ")
+hg= int(input("What is your hemoglobin value?: "))
+
+if (117 >  gen_a > 155 or 134 > gen_b > 167):
+
+    print("Your hemoglobin level is high.")
+
+if (117 < gen_a < 155 or  134 < gen_b <167):
+
+    print("Your hemoglobin is low")
+else:
+    if (117 ==  gen_a == 155 and 134 == gen_b== 167) :
+
+        print("Your hemoglobin level is normal.")
+
+
+#4
+
+user_3 = int(input("Enter a year:"))
+leap_year=user_3/4
+
+if user_3/100 and user_3/400:
+    print("This", user_3 ,"is a leap year")
+
+if leap_year:=user_3/4:
+
+    print("This", user_3, "is a leap year")
+else:
+    print("This year is not a leap year")
