@@ -7,53 +7,66 @@ if user_1 <42:
 else:
     print ("Enjoy your catch!")
 #2
+a = "Above car deck cabin that has a window"
+b = "Windowless cabin that is above the car deck"
+c ="Windowless cabin that is below the car deck"
+lux= "Upper deck cabin with a balcony"
 
 
+user_2= (input("What is the cabin class of your cabin ")). lower()
 
-user_2= input("What is the cabin class of your cabin")
+if user_2=="a":
+    print("Your cabin is an ",a)
 
-if user_2==a:
-    print("Your cabin is an ",{a}, "it has a window")
+elif user_2 == "b":
+    print("Your cabin is an ", b)
 
-elif user_2 == b:
-    print("Your cabin is an ", {b})
+elif user_2=="c":
+    print("Your cabin is ", c)
 
-elif user_2==c:
-    print("Your cabin is an ", {c})
+elif user_2==" lux":
+
+    print("Your cabin is " , lux)
 
 else:
-    print("Your cabin is " , {lux})
-
+    print("Invalid cabin class")
 
 #3
-gen_a = 'Female'
-gen_b = 'Male'
-gender= input("What is your biological gender?: ")
-hg= int(input("What is your hemoglobin value?: "))
+gender=["Male", "Female"]
+gender= ("Enter your biological gender: ")
+hemoglobin= ("Enter your hemoglobin level: ")
 
-if (117 >  gen_a > 155 or 134 > gen_b > 167):
+if gender == "Female":
+    117 >  hemoglobin > 155
+    print("Your hemoglobin is higher than normal levels.")
 
-    print("Your hemoglobin level is high.")
+if gender == "Male":
+    134 > hemoglobin > 167
+    print("Your hemoglobin is higher than normal levels.")
 
-if (117 < gen_a < 155 or  134 < gen_b <167):
+if gender == "Female":
+    117 == hemoglobin == 155
+    print("Your hemoglobin is normal.")
 
-    print("Your hemoglobin is low")
-else:
-    if (117 ==  gen_a == 155 and 134 == gen_b== 167) :
+if gender == "Male":
+    134 == hemoglobin == 167
+    print("Your hemoglobin is normal.")
 
-        print("Your hemoglobin level is normal.")
+if gender == "Female":
+    117 < hemoglobin < 155
+    print("Your hemoglobin is lower than normal levels.")
 
+if gender == "Male":
+        134 < hemoglobin < 167
+        print("Your hemoglobin is lower than normal levels.")
 
 #4
 
-user_3 = int(input("Enter a year:"))
-leap_year=user_3/4
+year= int(input("Enter a year:"))
 
-if user_3/100 and user_3/400:
-    print("This", user_3 ,"is a leap year")
+if int(year/4):
+    print("This year is a leap year")
 
-if leap_year:=user_3/4:
-
-    print("This", user_3, "is a leap year")
 else:
     print("This year is not a leap year")
+
