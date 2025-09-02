@@ -41,7 +41,6 @@ if gender == "Female":
     print("Your hemoglobin is higher than normal levels.")
 
 if gender == "Male":
-    134 > hemoglobin > 167
     print("Your hemoglobin is higher than normal levels.")
 
 if gender == "Female":
@@ -57,8 +56,10 @@ if gender == "Female":
     print("Your hemoglobin is lower than normal levels.")
 
 if gender == "Male":
-        134 < hemoglobin < 167
-        print("Your hemoglobin is lower than normal levels.")
+    134 < hemoglobin < 167
+    print("Your hemoglobin is lower than normal levels.")
+    134 > hemoglobin > 167
+
 
 #4
 
