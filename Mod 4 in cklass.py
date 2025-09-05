@@ -50,14 +50,35 @@ import random
 ##"average_rolls= total_rolls / rounds"""
 
 
-command= input("Enter command:")
+#command= input("Enter command:")
 
-while command!= "stop":
-    if command=="emergency":
-        break
-    print("We are free, what should we do, let's " + command)  #
-    command=input("Enter command: ")
-else:
-    print("Wow! That was really wonderful!")
+#while command!= "stop":
+    #if command=="emergency":
+        #break
+    #print("We are free, what should we do, let's " + command)  #
+   # command=input("Enter command: ")
+#print("Execution stopped because of emergency")
 
-print("Execution stopped because of emergency")
+username = "python"
+password = "rules"
+
+username_login = input("Enter your username: ").lower
+password_login = input(" Enter your password: ").lower
+
+while username_login != username:
+    username_login = input("Enter your username: ")
+    username_login = input("Enter your username: ")
+    username_login = input("Enter your username: ")
+    print("Access Denied")
+
+
+if password_login != password:
+    password_login = input(" Enter your password: ")
+    password_login = input(" Enter your password: ")
+    password_login = input(" Enter your password: ")
+    print("Access Denied")
+
+
+
+if username_login == username and password_login == password:
+        print("Welcome")

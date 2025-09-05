@@ -32,42 +32,39 @@ else:
     print("Invalid cabin class")
 
 #3
-gender=["Male", "Female"]
-gender= ("Enter your biological gender: ")
-hemoglobin= ("Enter your hemoglobin level: ")
+# I struggled with this code and cannot figure out how to make my statements have an effect
+gen_a="female"
+gen_b="male"
+gender= input("What is your biological gender?: ")
+hg= int(input("What is your hemoglobin value?: "))
 
-if gender == "Female":
-    117 >  hemoglobin > 155
-    print("Your hemoglobin is higher than normal levels.")
 
-if gender == "Male":
-    print("Your hemoglobin is higher than normal levels.")
+if (117 <= gen_a or gen_a <= 155) and (134 <= gen_b or gen_b <= 167):
+   pass
+else:
+   print("Your hemoglobin level is high.")
 
-if gender == "Female":
-    117 == hemoglobin == 155
-    print("Your hemoglobin is normal.")
 
-if gender == "Male":
-    134 == hemoglobin == 167
-    print("Your hemoglobin is normal.")
+if 117 < gen_a < 155 or 134 < gen_b and gen_b < 167:
 
-if gender == "Female":
-    117 < hemoglobin < 155
-    print("Your hemoglobin is lower than normal levels.")
 
-if gender == "Male":
-    134 < hemoglobin < 167
-    print("Your hemoglobin is lower than normal levels.")
-    134 > hemoglobin > 167
+   print("Your hemoglobin is low")
+else:
+   if 117 ==  gen_a == 155 and 134 == gen_b== 167:
+
+
+       print("Your hemoglobin level is normal.")
 
 
 #4
 
 year= int(input("Enter a year:"))
 
-if int(year/4):
+while int(year/4):
     print("This year is a leap year")
 
+if year/100 and year/400:
+    print("This year is a leap year")
 else:
     print("This year is not a leap year")
 
