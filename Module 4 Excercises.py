@@ -88,4 +88,17 @@ elif username_login == username and password_login == password:
 
 
 #6
-print("A square houses a circle that is just big enough to fit inside the edges of the square. We are testing how many points fall inside the circle because this correlates directly to the area of the square. ")
+# Struggled immensely on this problem. I understand the math, but I dont know how to put it in python
+#GeeksforGeeks. (2025, July 23). Calculate Pi with Python. https://www.geeksforgeeks.org/python/calculate-pi-with-python/
+import math
+
+import random
+
+print(math.pi)
+
+print("A square houses a circle that is just big enough to fit inside the edges of the square. We are testing how many points fall inside the circle because this directly correlates with the area of the square. ")
+points = random.uniform(input("Enter a number to generate a random number of points:  "))
+
+math.pi = 4/points
+
+
