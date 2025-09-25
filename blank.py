@@ -1,15 +1,51 @@
 
 
+def add_student(students, name, subject):
+    return students, name, subject
 
-import math
+def update_grade(students, name, subject,new_score):
+    return students, name, subject, new_score
 
-import random
+def add_subject(students, name, new_subject, score):
+    return students, name, new_subject, score
 
-print(math.pi)
+def print_subject(students,name):
+    return students, name
 
-print("A square houses a circle that is just big enough to fit inside the edges of the square. We are testing how many points fall inside the circle because this directly correlates with the area of the square. ")
-points = random.uniform(input("Enter a number to generate a random number of points:  "))
+def get_average(students,name):
+    return students, name
 
-math.pi = 4/points
+students ={
+    "Janice": {"Math": 88, "English": 100},
+    "Edward": {"Math": 93, "English": 73 }
+}
+name = "Janice", "Edward", "Charlie"
+subject= "Math", "Art", "English"
+score= 93, 73,88, 100, 60, 99
+# What I had """
+#students["Janice"]= {"Math": 88, "English": 100}
+# students["Edward"]= {"Math":93, "English": 73}
+#print(f"{students["Janice"]} your score for Math is: " , {students["Janice"]})
+
+#what the teacher had
+
+print("Janice's math score: ", students["Janice"]["Math"])
+
+print("Edwards english score: ", students["Edward"]["English"])
+
+students["Edward"]["Art"] = 50
+
+students["Janice"]["Math"]= 89
+
+students["Charlie"]= {"Math": 60, "English": 99}
+
+del students ["Edward"]["Math"]
+
+print("The whole students dictionary: ")
+
+for s in students:
+    print(s, students[s])
+
+
 
 
