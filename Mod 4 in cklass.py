@@ -58,7 +58,25 @@ import random
     #print("We are free, what should we do, let's " + command)  #
    # command=input("Enter command: ")
 #print("Execution stopped because of emergency")
+num = ["1", "2", "3", "4", "5"]
 
-def greet():
-    print("Hello!")
-    return
+
+def integers(num):
+    num = ["1", "2", "3", "4", "5"]
+    for num in range(1, 6, 2):
+        print(num)
+
+
+
+def integers(num):
+    num = ["1", "2", "3", "4", "5"]
+    for num in range(1, 6):
+        print(num)
+
+
+
+
+
+
+
+
