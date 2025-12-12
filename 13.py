@@ -1,28 +1,27 @@
 from flask import Flask
 
-airport_db={
-    "EFHK":{"Name": "Helsinki-Vantaa Airport", "Location": "Helsinki"}}
-
 app= Flask(__name__)
-@app.route('/airport/<icao>', methods= ["GET"])
-def get_airport_data(icao):
-    icao= icao.upper()
-    airport= airport_db.get(icao)
+@app.route('/prime_num/<num1>')
+def determine(num1):
+    try:
+        num1 = input("Enter a number")
+        quotient = num1/num1
 
-    if airport:
-        response = {
-            "ICAO" : icao,
-            "Name" : airport["Name"],
-            "Location": airport["Location"]
-        }
-        return response, 200
+        if quotient != 1:
+           is_prime= False
+        else:
+            is_prime = True
+    finally:
 
-    else:
-        response = {
-            "error" : "airport not found"
-        }
-    return response, 404
+        print(f"Number: {num1} , is_prime :{is_prime}")
 
 if __name__ == '__main__':
     app.run(debug=False, use_reloader=False, host='127.0.0.1', port= 5000)
 
+
+
+
+
+
+
+a
